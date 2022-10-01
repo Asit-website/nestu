@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Mirrored from csmthemes.com/themes/beta/static/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 10:10:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NESTOHUB</title>
+<meta name="description" content="NESTOHUB">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/red.css" rel="alternate stylesheet" title="red">
+<link href="css/yellow.css" rel="alternate stylesheet" title="yellow">
+<link href="css/blue.css" rel="alternate stylesheet" title="blue">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+     iframe{
+      max-width: 450px;
+      width: 100%;
+      height:400px;
+      max-height: 100%;
+      object-fit: cover;
+
+     }
+
+     .video-player{
+        max-width: 800px;
+        width: 100%;
+        max-height: 100%;
+        position: relative;
+        overflow: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       
+    }
+
+    .video-player:hover .player-button{
+      display: block;
+      transition: 0.5s;
+    }
+
+    .video{
+     width: 100%;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 15px;
+     
+     /* filter: brightness(0.8); */
+    }
+
+   
+    .player-controls{
+      position: relative;
+    }
+
+    .player-button{
+      position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c00000;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: none;
+}
+
+.player-button i{
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  color: #fff;
+}
+
+.app{
+  display: flex;
+  align-items: center;
+
+}
+
+.app img{
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+ margin: 30px 10px;
+}
+
+@media only screen and (max-width:450px){
+  .player-button{
+    position: absolute;
+    top: -90px;
+  }
+}
+    
+@media only screen and (max-width:375px){
+  .welcome-message h1{
+    font-size: 21px;
+  }
+  .first-proff h1 {
+    font-size: 22px;
+}
+
+.welcome-message h2{
+  font-size: 14px;
+}
+.button{
+  font-size: 14px;
+}
+
+.terms{
+  font-size: 12px;
+}
+
+.first-proff p{
+  font-size: 14px;
+}
+.timer h2{
+  font-size: 22px;
+}
+ul.countdown{
+  font-size: 14px;
+}
+.contact h2{
+  font-size: 22px;
+}
+.contact .form-control{
+  font-size: 14px;
+}
+.contact .btn{
+  font-size: 14px;
+}
+
+.player-button{
+ 
+  width: 40px;
+  height: 40px;
+}
+
+.player-button i{
+ 
+  font-size: 14px;
+  
+}
+
+@media only screen and (max-width:276px) {
+   .player-button {
+    top: -60px;
+   }
+}
+}
+       /* position: absolute; */
+    
+</style>
+<body>
+
+<!--hero-unit-->
+
+<div class="hero-unit">
+ 
+  <!-- <div class="overlay"></div> -->
+  <!--container-->
+  <div class="container">
+    <header class="row">
+      <div class="col-md-6 col-sm-6"> 
+        <!--logo-->
+        <div class="logo"> <img src="img/nestohub4.png"  alt="logo"> </div>
+        <!--logo end--> 
+      </div>
+      <div class="col-md-6 col-sm-6 clearfix"> 
+        <!--social-->
+        <ul class="social text-center">
+          <li><a href="https://www.youtube.com/channel/UCeEQa6y1Fbb-FqMcnFIbn_Q" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="https://www.facebook.com/Nestohub-103562212526400" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/nestohub/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <!--social end--> 
+
+       
+      </div>
+     
+    </header>
+   
+    <!--cta-->
+    <div class="cta">
+      <div class="row">
+        <aside class="col-md-8"> 
+        <!-- play -->
+          <!-- <iframe src="https://www.youtube.com/embed/PAZEh6C6U98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+          <div class="video-player">
+            <video  class="video" poster="img/Screenshot (131).png" autoplay="" preload="metadata"> <source  src="img/nestovideo.mp4" type="video/mp4">
+            </video>
+            <div class="player-controls">
+                 <button class="player-button" title="play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div>
+
+          <!-- ho -->
+        </aside>
+        
+        <div class="col-md-4 white-sect">
+          <header class="welcome-message text-center">
+            <!-- <h1>Get Early Access</h1> -->
+            <h1>To get access to the premium inventory and get opportunity to earn high brokerage</h1>
+            <!-- <h2>Subscribe Now</h2> -->
+            <h2>Register With NESTOHUB</h2>
+            <!--sub-form-->
+            <div class="sub-form">
+              <form role="form" id="mc-form">
+                <!-- http://csmthemes.us3.list-manage.com/subscribe/post-json?u=9666c25a337f497687875a388&amp;id=5b881a50fb&amp;c=? -->
+                <!-- <input class="first-sys" type="email" placeholder="Email Address" required value="" name="EMAIL"> -->
+               
+                <!-- <a style="text-decoration: none;" target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button class="btn btn-danger regist">Register Here</button></a> -->
+              </form>
+             <a target="_blank" href="https://forms.gle/qWLebR99gXmJvE5i6"><button style="background-color: #c00000; border: none;" type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">Register now for FREE <br><span style="font-size: 12px;">(for Brokers / Advisors / Agents)</span></button></a>
+              <p class="terms">* We won’t spam</p>
+              <p id="mc-notification"></p>
+            </div>
+            <!--sub-form end--> 
+          </header>
+        </div>
+
+      </div>
+    </div>
+    <!--cta end--> 
+  </div>
+  
+  <!--container end--> 
+ 
+</div>
+<!--hero-unit end--> 
+
+<!--countdown timer-->
+<div class="proff">
+   <div class="first-proff">
+     <h1>India's first B2B PropTech platform designed exclusively for brokers</h1>
+      <p>
+        Nestohub app is a solution to major problems faced by builder & broker and maximize their business.</p>
+    
+      <div class="app">
+         <img src="img/google-play.png" alt="">
+         <img src="img/app.png" alt="">
+      </div>
+   </div>
+   <div class="second-proff">
+      <img src="img/Real-Estate.png" alt="">
+   </div>
+</div>
+<div class="timer section-spacing">
+  <div class="container">
+    <h2 class="text-center">TIME LEFT FOR LAUNCH</h2>
+    <div class="row">
+      <div class="col-md-12"> 
+        <!-- Countdown-->
+        <ul class="countdown text-center">
+          <li class="slide-left"> <span class="days">00</span>
+            <p class="days_ref">days</p>
+          </li>
+          <li class="slide-left seperator">:</li>
+          <li class="slide-bottom"> <span class="hours">00</span>
+            <p class="hours_ref">hours</p>
+          </li>
+          <li class="slide-bottom seperator">:</li>
+          <li class="slide-top"> <span class="minutes">00</span>
+            <p class="minutes_ref">minutes</p>
+          </li>
+          <li class="slide-top seperator">:</li>
+          <li class="slide-right"> <span class="seconds">00</span>
+            <p class="seconds_ref">seconds</p>
+          </li>
+        </ul>
+        <!-- Countdown end--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--countdown timer end--> 
+
+<!--features-->
+<!-- <section class="features text-center section-spacing"> 
+ -container-->
+  <!-- <div class="container">
+    <h2>OUR FEATURES</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="slide-left feature"> <img src="img/feature-1.png" data-at2x="img/feature-1@2x.png" alt="feature">
+          <h3>Feature 1</h3>
+          <p>Nesto Hub is India’s first B2B real estate platform which connects brokers with builders.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="slide-top feature"> <img src="img/feature-2.png" data-at2x="img/feature-2@2x.png" alt="feature">
+          <h3>Feature 2</h3>
+          <p>Nesto Hub helps builders in selling their inventory at faster rate as the inventory is accessible by large pool of brokers across PAN India.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="slide-right feature"> <img src="img/feature-3.png" data-at2x="img/feature-3@2x.png" alt="feature">
+          <h3>Feature 3</h3>
+          <p>Nesto Hub enables brokers to get visibility into premium properties at PAN India level and provide them opportunity to get rid of dependencies on the bigger dealers.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!--container end--> 
+
+<!--features end--> 
+
+<!--counter-->
+<!-- <div class="counter text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-users fa-3x"></i>
+        <h3 class="total-number-1">0</h3>
+        <p>Registered users</p>
+      </div>
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-thumbs-up fa-3x"></i>
+        <h3 class="total-number-2">0</h3>
+        <p>Facebook Fans</p>
+      </div>
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-smile-o fa-3x"></i>
+        <h3 class="total-number-3">0</h3>
+        <p>Talking About This</p>
+      </div>
+      <div class="col-sm-3 col-xs-6"> <i class="fa fa-heart fa-3x"></i>
+        <h3 class="total-number-4">0</h3>
+        <p>Subscribed Users</p>
+      </div>
+    </div>
+  </div>
+  
+</div> -->
+<!--counter end--> 
+
+<!-- contact-->
+<section class="contact section-spacing" id="contact">
+  <h2 class="text-center">CONTACT US</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 center-block"> 
+        
+        <!--contact form-->
+        
+        <div class="contact-form">
+          <div class="success-sf">
+            <p>Thank You! Your message has been sent.</p>
+          </div>
+          <div class="error-sf">
+            <p>Something went wrong, try refreshing and submitting the form again.</p>
+          </div>
+          <form role="form" action="mailto:asitmandal492@gmail.com" method="post" id="contact-form">
+            <div class="form-group">
+              <input type="text" class="slide-left form-control" name="name" id="name-s" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <input  type="email" class="slide-left form-control" name="email" id="email-s" placeholder="Email Address" required>
+            </div>
+            <div class="form-group text-area">
+              <textarea class="slide-right form-control" name="message" id="message-s" rows="4" placeholder="Enter Your Message" required></textarea>
+            </div>
+            <button type="submit" class="slide-right btn button" id="submit-btn-s">SEND </button>
+            <h3 class="sideer-contact">Email us at : info@nestohub.co</h3>
+          </form>
+          
+          <!--contact form end--> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="scroll-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+</section>
+<!-- contact end--> 
+
+<!--footer-->
+<footer class="site-footer text-center"> 
+  <!--container-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+        <small class="slide-top">&copy; <span class="bold">Nesto Hub</span></small></div>
+    </div>
+  </div>
+  <!--container end--> 
+  
+</footer>
+<!--footer end--> 
+
+<!--PRELOAD-->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+
+<script>
+  const videoPlayer = document.querySelector('.video-player');
+ const video = videoPlayer.querySelector('.video');
+ 
+ const playButton = videoPlayer.querySelector('.player-button');
+ 
+ 
+ //play and pause button
+ 
+ playButton.addEventListener('click',(e)=>{
+    if(video.paused){
+     video.play();
+    playButton.innerHTML="<i class='fa-sharp fa-solid fa-pause'></i>"
+ 
+    }
+    else{
+     video.pause();
+    playButton.innerHTML="<i class='fa-solid fa-play'></i>"
+    }
+
+ })
+ </script>
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/waypoints.min.js"></script> 
+<script src="js/jquery.animateNumber.min.js"></script> 
+<script src="js/jquery.fadethis.min.js"></script> 
+<script src="js/jquery.downCount.js"></script> 
+<script src="js/jquery.form.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script> 
+<script src="js/themeswitch.js"></script> 
+<script src="js/main.js"></script>
+
+
+</body>
+
+<!-- Mirrored from csmthemes.com/themes/beta/static/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 10:10:32 GMT -->
+</html>
